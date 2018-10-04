@@ -27,12 +27,18 @@ namespace Workflow_MVC_1.Models
 
         public List<ApplicationUser> MyUsers { get; set; }
 
+        [Required]
+        public State MyState { get; set; }
 
-        public enum State
-        {
-            Start,
-            Inprosses,
-            Done
-        }
+    }
+
+
+    public enum State
+    {
+        Start,
+        Inprosses,
+        Accept,
+        Rejected,
+        Done
     }
 }

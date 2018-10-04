@@ -10,6 +10,7 @@ using Workflow_MVC_1.Models;
 
 namespace Workflow_MVC_1.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class WorkflowsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -46,7 +47,7 @@ namespace Workflow_MVC_1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,OwnerUser,Name,Context,StartDate,TargetUser")] Workflow workflow)
+        public ActionResult Create([Bind(Include = "Id,OwnerUser,Name,Context,StartDate,TargetUser,MyState")] Workflow workflow)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +79,7 @@ namespace Workflow_MVC_1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,OwnerUser,Name,Context,StartDate,TargetUser")] Workflow workflow)
+        public ActionResult Edit([Bind(Include = "Id,OwnerUser,Name,Context,StartDate,TargetUser,MyState")] Workflow workflow)
         {
             if (ModelState.IsValid)
             {

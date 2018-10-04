@@ -222,6 +222,10 @@
     <Compile Include="Migrations\201810041421309_stateworkflow.Designer.cs">
       <DependentUpon>201810041421309_stateworkflow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810041804314_stateworkflow1.cs" />
+    <Compile Include="Migrations\201810041804314_stateworkflow1.Designer.cs">
+      <DependentUpon>201810041804314_stateworkflow1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -295,6 +299,7 @@
     <Content Include="Views\Workflows\Details.cshtml" />
     <Content Include="Views\Workflows\Edit.cshtml" />
     <Content Include="Views\Workflows\Index.cshtml" />
+    <Content Include="Views\MyWorkflow\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -327,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810041421309_stateworkflow.resx">
       <DependentUpon>201810041421309_stateworkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810041804314_stateworkflow1.resx">
+      <DependentUpon>201810041804314_stateworkflow1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
