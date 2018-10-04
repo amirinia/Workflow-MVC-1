@@ -27,6 +27,9 @@ namespace Workflow_MVC_1.Models
 
         public List<ApplicationUser> MyUsers { get; set; }
 
+        [DataType(DataType.ImageUrl)]
+        public string ImageUrl { get; set; }
+
         [Required]
         public State MyState { get; set; }
 

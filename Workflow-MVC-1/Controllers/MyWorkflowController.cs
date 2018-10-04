@@ -59,5 +59,28 @@ namespace Workflow_MVC_1.Controllers
             return View(workflow);
         }
 
+        // GET: Workflows/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Workflows/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Id,OwnerUser,Name,Context,StartDate,TargetUser,MyState")] Workflow workflow)
+        {
+            if (ModelState.IsValid)
+            {
+                db.workflows.Add(workflow);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(workflow);
+        }
+
     }
 }

@@ -300,6 +300,7 @@
     <Content Include="Views\Workflows\Edit.cshtml" />
     <Content Include="Views\Workflows\Index.cshtml" />
     <Content Include="Views\MyWorkflow\Edit.cshtml" />
+    <Content Include="Views\MyWorkflow\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
