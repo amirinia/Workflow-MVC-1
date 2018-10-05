@@ -8,6 +8,7 @@ using Workflow_MVC_1.Models;
 
 namespace Workflow_MVC_1.Controllers
 {
+    [Authorize]
     public class DownloadFileController : Controller
     {
 

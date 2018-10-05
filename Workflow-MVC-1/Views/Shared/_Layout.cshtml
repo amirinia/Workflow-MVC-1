@@ -17,15 +17,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Workflow", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("MiniCRM", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Admin Workflows", "Index", "Workflows")</li>
-                    <li>@Html.ActionLink("My Current Workflows", "Index", "MyWorkflow")</li>
-                    <li>@Html.ActionLink("Upload", "UploadFiles", "File")</li>
-                    <li>@Html.ActionLink("Download", "Index", "DownloadFile")</li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            WorkFlow
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="@Url.Action("Index","MyWorkflow")">My Workflows</a></li>
+                            <li><a href="@Url.Action("Create","MyWorkflow")">Create Workflow</a></li>
+                            <li><a href="@Url.Action("Index","Workflows")">Admin Workflows</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Timesheet
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="@Url.Action("Index","Timesheet")">My timesheet</a></li>
+                            <li><a href="@Url.Action("IndexAdmin","Timesheet")">Admin List</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="@Url.Action("UploadFiles","File")">Upload</a></li>
+                            <li><a href="@Url.Action("Index","DownloadFile")">Download</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>

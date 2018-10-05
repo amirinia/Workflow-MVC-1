@@ -200,6 +200,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MyWorkflowController.cs" />
+    <Compile Include="Controllers\TimesheetController.cs" />
     <Compile Include="Controllers\WorkflowsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -240,15 +241,21 @@
     <Compile Include="Migrations\201810051119433_files.Designer.cs">
       <DependentUpon>201810051119433_files.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810051149270_testtimesheet.cs" />
+    <Compile Include="Migrations\201810051149270_testtimesheet.Designer.cs">
+      <DependentUpon>201810051149270_testtimesheet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DownloadFile.cs" />
     <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Timesheet.cs" />
     <Compile Include="Models\Workflow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\TimesheetFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -319,6 +326,14 @@
     <Content Include="Views\Workflows\Index.cshtml" />
     <Content Include="Views\DownloadFile\Index.cshtml" />
     <Content Include="Views\File\UploadFiles.cshtml" />
+    <Content Include="Views\Timesheet\Create.cshtml" />
+    <Content Include="Views\Timesheet\Delete.cshtml" />
+    <Content Include="Views\Timesheet\Details.cshtml" />
+    <Content Include="Views\Timesheet\Edit.cshtml" />
+    <Content Include="Views\Timesheet\EditAdmin.cshtml" />
+    <Content Include="Views\Timesheet\EditView.cshtml" />
+    <Content Include="Views\Timesheet\Index.cshtml" />
+    <Content Include="Views\Timesheet\IndexAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -364,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810051119433_files.resx">
       <DependentUpon>201810051119433_files.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810051149270_testtimesheet.resx">
+      <DependentUpon>201810051149270_testtimesheet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
