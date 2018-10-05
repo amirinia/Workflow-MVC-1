@@ -10,6 +10,7 @@ using Workflow_MVC_1.Models;
 
 namespace Workflow_MVC_1.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class WorkflowsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

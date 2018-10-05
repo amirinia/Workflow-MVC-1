@@ -23,7 +23,7 @@ namespace Workflow_MVC_1.Models
         public DbSet<Workflow> workflows { get; set; }
         public DbSet<FileModel> FileModels { set; get; }
         public DbSet<DownloadFile> DownloadFiles { set; get; }
-
+        public DbSet<Timesheet> Timesheets { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
