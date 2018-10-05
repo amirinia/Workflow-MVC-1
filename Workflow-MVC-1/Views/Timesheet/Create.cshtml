@@ -7,7 +7,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ایجاد جدید</h2>
+<h2>Create New</h2>
 
 @using (Html.BeginForm("Create", "Timesheet"))
 {
@@ -54,7 +54,7 @@
         @Html.TextBoxFor(m => m.TimeEnd, new { disabled = "disabled", @class = "form-control" })
         @Html.ValidationMessageFor(m => m.TimeEnd)
     </div>
-    <button type="submit" class="btn btn-primary">ذخیره</button>
+    <button type="submit" class="btn btn-primary">Save</button>
 
 
 }

@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>جزییات</h2>
+<h2>Details</h2>
 
 <div>
     <h4>Timesheet</h4>
@@ -38,6 +38,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("ویرایش", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("بازگشت", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
 </p>

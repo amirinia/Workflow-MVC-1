@@ -8,7 +8,7 @@
 <h2>ListView</h2>
 
 <p>
-    @Html.ActionLink("ثبت ساعت جدید", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -45,13 +45,13 @@
         @if (item.StartDay.Date == DateTime.Now.Date)
         {
             <td>
-                @Html.ActionLink("ثبت خروج", "Edit", new { id = item.Id }, new { disabled = "@Disabled" }) 
+                @Html.ActionLink("Save Exit", "Edit", new { id = item.Id }, new { disabled = "@Disabled" }) 
             </td>
         }
         else
         {
             <td>
-                @Html.ActionLink("جزییات", "Details", new { id = item.Id }, new { disabled = "disabled" })
+                @Html.ActionLink("Details", "Details", new { id = item.Id }, new { disabled = "disabled" })
             </td>
         }
     </tr>
