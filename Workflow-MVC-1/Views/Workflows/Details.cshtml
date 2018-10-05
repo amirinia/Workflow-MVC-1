@@ -52,12 +52,29 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.MyState)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.MyState)
         </dd>
+        @if (Model.Files.Any(f => f.FileType.ToString() == "Avatar"))
+        {
+            <dt>
+                Avatar
+            </dt>
+            <dd>
+                <img src="~/File?id=@Model.Files.First(f => f.FileType.ToString() == "Avatar").FileId" alt="avatar" />
+            </dd>
+        }
 
     </dl>
 </div>

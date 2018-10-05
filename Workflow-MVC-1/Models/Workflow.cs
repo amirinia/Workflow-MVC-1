@@ -33,6 +33,7 @@ namespace Workflow_MVC_1.Models
         [Required]
         public State MyState { get; set; }
 
+
     }
 
 

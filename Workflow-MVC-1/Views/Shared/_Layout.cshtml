@@ -23,6 +23,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Admin Workflows", "Index", "Workflows")</li>
                     <li>@Html.ActionLink("My Current Workflows", "Index", "MyWorkflow")</li>
+                    <li>@Html.ActionLink("Upload", "UploadFiles", "File")</li>
+                    <li>@Html.ActionLink("Download", "Index", "DownloadFile")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
