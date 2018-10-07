@@ -7,13 +7,13 @@ namespace Workflow_MVC_1.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialModel3 : IMigrationMetadata
+    public sealed partial class firstcon : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel3));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(firstcon));
         
         string IMigrationMetadata.Id
         {
-            get { return "201810041317556_InitialModel3"; }
+            get { return "201810071507512_firstcon"; }
         }
         
         string IMigrationMetadata.Source

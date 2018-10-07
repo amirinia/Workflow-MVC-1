@@ -205,45 +205,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810041248381_InitialModel.cs" />
-    <Compile Include="Migrations\201810041248381_InitialModel.Designer.cs">
-      <DependentUpon>201810041248381_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041257017_InitialModel1.cs" />
-    <Compile Include="Migrations\201810041257017_InitialModel1.Designer.cs">
-      <DependentUpon>201810041257017_InitialModel1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041306120_InitialModel2.cs" />
-    <Compile Include="Migrations\201810041306120_InitialModel2.Designer.cs">
-      <DependentUpon>201810041306120_InitialModel2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041317556_InitialModel3.cs" />
-    <Compile Include="Migrations\201810041317556_InitialModel3.Designer.cs">
-      <DependentUpon>201810041317556_InitialModel3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041421309_stateworkflow.cs" />
-    <Compile Include="Migrations\201810041421309_stateworkflow.Designer.cs">
-      <DependentUpon>201810041421309_stateworkflow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041804314_stateworkflow1.cs" />
-    <Compile Include="Migrations\201810041804314_stateworkflow1.Designer.cs">
-      <DependentUpon>201810041804314_stateworkflow1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041941268_beforepic.cs" />
-    <Compile Include="Migrations\201810041941268_beforepic.Designer.cs">
-      <DependentUpon>201810041941268_beforepic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810041947250_file.cs" />
-    <Compile Include="Migrations\201810041947250_file.Designer.cs">
-      <DependentUpon>201810041947250_file.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810051119433_files.cs" />
-    <Compile Include="Migrations\201810051119433_files.Designer.cs">
-      <DependentUpon>201810051119433_files.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810051149270_testtimesheet.cs" />
-    <Compile Include="Migrations\201810051149270_testtimesheet.Designer.cs">
-      <DependentUpon>201810051149270_testtimesheet.cs</DependentUpon>
+    <Compile Include="Migrations\201810071507512_firstcon.cs" />
+    <Compile Include="Migrations\201810071507512_firstcon.Designer.cs">
+      <DependentUpon>201810071507512_firstcon.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -353,35 +317,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810041248381_InitialModel.resx">
-      <DependentUpon>201810041248381_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041257017_InitialModel1.resx">
-      <DependentUpon>201810041257017_InitialModel1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041306120_InitialModel2.resx">
-      <DependentUpon>201810041306120_InitialModel2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041317556_InitialModel3.resx">
-      <DependentUpon>201810041317556_InitialModel3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041421309_stateworkflow.resx">
-      <DependentUpon>201810041421309_stateworkflow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041804314_stateworkflow1.resx">
-      <DependentUpon>201810041804314_stateworkflow1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041941268_beforepic.resx">
-      <DependentUpon>201810041941268_beforepic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810041947250_file.resx">
-      <DependentUpon>201810041947250_file.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810051119433_files.resx">
-      <DependentUpon>201810051119433_files.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810051149270_testtimesheet.resx">
-      <DependentUpon>201810051149270_testtimesheet.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810071507512_firstcon.resx">
+      <DependentUpon>201810071507512_firstcon.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
