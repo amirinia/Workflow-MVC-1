@@ -220,6 +220,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\TimesheetFormViewModel.cs" />
+    <Compile Include="ViewModels\WorkflowFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -298,6 +299,7 @@
     <Content Include="Views\Timesheet\EditView.cshtml" />
     <Content Include="Views\Timesheet\Index.cshtml" />
     <Content Include="Views\Timesheet\IndexAdmin.cshtml" />
+    <Content Include="Views\MyWorkflow\CreateWorkflowModelView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

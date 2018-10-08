@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Workflow_MVC_1.Models;
+using Workflow_MVC_1.ViewModels;
 
 namespace Workflow_MVC_1.Controllers
 {
@@ -14,6 +15,16 @@ namespace Workflow_MVC_1.Controllers
     public class MyWorkflowController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        public ActionResult CreateWorkflowModelView()
+        {
+            var viewModel = new WorkflowFormViewModel
+            {
+                TargetUsers = db.Users.ToList()
+            };
+
+            return View(viewModel);
+        }
 
         // GET: MyWorkflow
         public ActionResult Index()

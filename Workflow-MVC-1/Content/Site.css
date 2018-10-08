@@ -19,8 +19,6 @@ select,
 textarea {
   max-width: 380px;
   border-radius :9px;
-  height:100px;
-  width:450px;
 }
 span.field-validation-error {
   color: red;
