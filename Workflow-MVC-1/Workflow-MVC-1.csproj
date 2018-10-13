@@ -199,15 +199,42 @@
     <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MyWorkflowController.cs" />
     <Compile Include="Controllers\TimesheetController.cs" />
-    <Compile Include="Controllers\WorkflowsController.cs" />
+    <Compile Include="Controllers\WorkflowVController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201810071507512_firstcon.cs" />
     <Compile Include="Migrations\201810071507512_firstcon.Designer.cs">
       <DependentUpon>201810071507512_firstcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810090844195_targetusers.cs" />
+    <Compile Include="Migrations\201810090844195_targetusers.Designer.cs">
+      <DependentUpon>201810090844195_targetusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810090852367_targetusers1.cs" />
+    <Compile Include="Migrations\201810090852367_targetusers1.Designer.cs">
+      <DependentUpon>201810090852367_targetusers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810090904153_targetusers2.cs" />
+    <Compile Include="Migrations\201810090904153_targetusers2.Designer.cs">
+      <DependentUpon>201810090904153_targetusers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810090927517_addworkflowvm.cs" />
+    <Compile Include="Migrations\201810090927517_addworkflowvm.Designer.cs">
+      <DependentUpon>201810090927517_addworkflowvm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810131737542_datatype.cs" />
+    <Compile Include="Migrations\201810131737542_datatype.Designer.cs">
+      <DependentUpon>201810131737542_datatype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810131834027_workflowV.cs" />
+    <Compile Include="Migrations\201810131834027_workflowV.Designer.cs">
+      <DependentUpon>201810131834027_workflowV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810131919128_datevm.cs" />
+    <Compile Include="Migrations\201810131919128_datevm.Designer.cs">
+      <DependentUpon>201810131919128_datevm.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -220,7 +247,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\TimesheetFormViewModel.cs" />
-    <Compile Include="ViewModels\WorkflowFormViewModel.cs" />
+    <Compile Include="Models\WorkflowV.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -281,14 +308,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\MyWorkflow\Index.cshtml" />
-    <Content Include="Views\MyWorkflow\Edit.cshtml" />
-    <Content Include="Views\MyWorkflow\Create.cshtml" />
-    <Content Include="Views\Workflows\Create.cshtml" />
-    <Content Include="Views\Workflows\Delete.cshtml" />
-    <Content Include="Views\Workflows\Details.cshtml" />
-    <Content Include="Views\Workflows\Edit.cshtml" />
-    <Content Include="Views\Workflows\Index.cshtml" />
     <Content Include="Views\DownloadFile\Index.cshtml" />
     <Content Include="Views\File\UploadFiles.cshtml" />
     <Content Include="Views\Timesheet\Create.cshtml" />
@@ -299,7 +318,12 @@
     <Content Include="Views\Timesheet\EditView.cshtml" />
     <Content Include="Views\Timesheet\Index.cshtml" />
     <Content Include="Views\Timesheet\IndexAdmin.cshtml" />
-    <Content Include="Views\MyWorkflow\CreateWorkflowModelView.cshtml" />
+    <Content Include="Views\WorkflowV\Create.cshtml" />
+    <Content Include="Views\WorkflowV\Delete.cshtml" />
+    <Content Include="Views\WorkflowV\Details.cshtml" />
+    <Content Include="Views\WorkflowV\Edit.cshtml" />
+    <Content Include="Views\WorkflowV\Index.cshtml" />
+    <Content Include="Views\WorkflowV\IndexAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +345,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810071507512_firstcon.resx">
       <DependentUpon>201810071507512_firstcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090844195_targetusers.resx">
+      <DependentUpon>201810090844195_targetusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090852367_targetusers1.resx">
+      <DependentUpon>201810090852367_targetusers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090904153_targetusers2.resx">
+      <DependentUpon>201810090904153_targetusers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810090927517_addworkflowvm.resx">
+      <DependentUpon>201810090927517_addworkflowvm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810131737542_datatype.resx">
+      <DependentUpon>201810131737542_datatype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810131834027_workflowV.resx">
+      <DependentUpon>201810131834027_workflowV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810131919128_datevm.resx">
+      <DependentUpon>201810131919128_datevm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

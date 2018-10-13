@@ -19,13 +19,14 @@ namespace Workflow_MVC_1.Models
         public string Name { get; set; }
         public string Context { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime StartDate {get; set;}
 
         [Required]
-        public string TargetUser { get; set; }
-        public virtual ApplicationUser TargetUser1 { get; set; }
+        public string TargetUserId { get; set; }
+        public virtual ApplicationUser TargetUser { get; set; }
 
-        public List<ApplicationUser> MyUsers { get; set; }
+        public List<ApplicationUser> TargetUsers { get; set; }
 
         [DataType(DataType.ImageUrl)]
         public string ImageUrl { get; set; }

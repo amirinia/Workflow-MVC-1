@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Workflow_MVC_1.ViewModels;
 
 namespace Workflow_MVC_1.Models
 {
@@ -20,10 +21,11 @@ namespace Workflow_MVC_1.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Workflow> workflows { get; set; }
+        public DbSet<Workflow> Workflows { get; set; }
         public DbSet<FileModel> FileModels { set; get; }
         public DbSet<DownloadFile> DownloadFiles { set; get; }
         public DbSet<Timesheet> Timesheets { get; set; }
+        public DbSet<WorkflowV> WorkflowVs { set; get; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -33,5 +35,6 @@ namespace Workflow_MVC_1.Models
         {
             return new ApplicationDbContext();
         }
+
     }
 }
